@@ -1,0 +1,151 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: url('https://wallpapers.com/images/featured/drink-uio74i0rowuwdowi.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 70vh;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 1rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.heroBtn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #FA8072;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.heroBtn:hover {
+  background-color: #f25e3d;
+  transform: translateY(-2px);
+}
+
+.aboutSection {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.aboutTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.aboutParagraph {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin: 0.5rem auto 2rem;
+}
+
+.cocktailsSection {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.cocktailGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.cardImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cardInfo {
+  padding: 0.75rem 1rem;
+}
+
+.cardName {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.cardCategory {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+.readBtn {
+  background-color: #FA8072;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.readBtn:hover {
+  background-color: #f25e3d;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+}

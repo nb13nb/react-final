@@ -1,0 +1,126 @@
+.pageContainer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .backLink {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #fa8072;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s, transform 0.2s;
+  }
+  
+  .backLink:hover {
+    color: #f25e3d;
+    transform: translateX(-3px);
+  }
+  
+  .detailsWrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: flex-start;
+  }
+  
+  .cocktailImage {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  }
+  
+  .infoSection {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  }
+  
+  .cocktailTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .category {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  .ingredientList {
+    margin-top: 1.5rem;
+    list-style: none;
+    padding: 0;
+    color: #444;
+  }
+  
+  .ingredientItem {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ingredientItem::before {
+    content: '•';
+    color: #fa8072;
+    margin-right: 0.5rem;
+  }
+  
+  .actionsRow {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primaryBtn {
+    background-color: #fa8072;
+    color: #fff;
+    padding: 0.75rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .primaryBtn:hover {
+    background-color: #f25e3d;
+    transform: translateY(-2px);
+  }
+  
+  .secondaryBtn {
+    background-color: #ddd;
+    color: #333;
+    padding: 0.75rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .secondaryBtn:hover {
+    background-color: #ccc;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 900px) {
+    .detailsWrapper {
+      grid-template-columns: 1fr;
+    }
+    .cocktailTitle {
+      font-size: 1.8rem;
+    }
+  }
+  

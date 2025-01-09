@@ -1,0 +1,149 @@
+.pageContainer {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.controlsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.65rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #fa8072;
+}
+
+.selectCategory {
+  flex: none;
+  padding: 0.65rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.selectCategory:focus {
+  border-color: #fa8072;
+}
+
+.cocktailGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.cocktailCard {
+  background-color: #fff;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.cocktailCard:hover {
+  transform: translateY(-3px);
+}
+
+.cocktailImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cocktailInfo {
+  padding: 0.75rem 1rem;
+}
+
+.cocktailName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.cocktailCategory {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.cardButtons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.viewBtn {
+  padding: 0.5rem 0.8rem;
+  background-color: #fa8072;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.viewBtn:hover {
+  background-color: #f25e3d;
+  transform: translateY(-2px);
+}
+
+.paginationContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.paginationContainer span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paginationBtn {
+  padding: 0.5rem 1rem;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.paginationBtn:hover {
+  background-color: #ccc;
+}
+
+.disabledBtn {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .cocktailImg {
+    height: 180px;
+  }
+}

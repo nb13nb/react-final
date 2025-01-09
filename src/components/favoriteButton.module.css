@@ -1,0 +1,37 @@
+.favoriteIcon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.8rem;
+    color: white; 
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+    z-index: 5;
+  }
+  
+  .favoriteIcon:hover {
+    transform: scale(1.1);
+  }
+  
+  .activeStar {
+    color: gold;
+  }
+  
+  .toastMessage {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #333;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    opacity: 0.9;
+    animation: fadeOut 3s forwards; 
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 0.9; }
+    80% { opacity: 0.9; }
+    100% { opacity: 0; }
+  }
+  
